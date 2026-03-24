@@ -1,0 +1,14 @@
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Proiect.exe
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Proiect.deps.json
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Proiect.runtimeconfig.json
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Proiect.dll
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Proiect.pdb
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.GeneratedMSBuildEditorConfig.editorconfig
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.AssemblyInfoInputs.cache
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.AssemblyInfo.cs
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.csproj.CoreCompileInputs.cache
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.dll
+D:\PIUproiect\Proiect\obj\Debug\net8.0\refint\Proiect.dll
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.pdb
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.genruntimeconfig.cache
+D:\PIUproiect\Proiect\obj\Debug\net8.0\ref\Proiect.dll
