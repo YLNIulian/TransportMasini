@@ -3,10 +3,12 @@
   "WorkspaceRootPath": "D:\\PIUproiect\\Proiect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{900D743E-4683-415D-97F7-3544D7D44450}|..\\Logica\\Logica.csproj|d:\\piuproiect\\logica\\administratormemorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06D4EFDE-8AE2-4A5C-8AD5-F912CE4DC7E5}|Modele\\Modele.csproj|d:\\piuproiect\\proiect\\modele\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06D4EFDE-8AE2-4A5C-8AD5-F912CE4DC7E5}|Modele\\Modele.csproj|solutionrelative:modele\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FCB28D5-F888-4419-A665-00D015F368BC}|..\\Modele\\Modele.csproj|d:\\piuproiect\\modele\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C6C01CB-E587-49AD-AEA1-48E7E7658EA4}|Logica\\Logica.csproj|d:\\piuproiect\\proiect\\logica\\administratormemorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6C01CB-E587-49AD-AEA1-48E7E7658EA4}|Logica\\Logica.csproj|solutionrelative:logica\\administratormemorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B27A8B7-A0E8-446A-AB78-9E8116A08096}|Proiect.csproj|d:\\piuproiect\\proiect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,27 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AdministratorMemorie.cs",
-              "DocumentMoniker": "D:\\PIUproiect\\Logica\\AdministratorMemorie.cs",
-              "RelativeDocumentMoniker": "..\\Logica\\AdministratorMemorie.cs",
-              "ToolTip": "D:\\PIUproiect\\Logica\\AdministratorMemorie.cs",
-              "RelativeToolTip": "..\\Logica\\AdministratorMemorie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAtAAAAAAAAAA==",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\PIUproiect\\Proiect\\Modele\\Class1.cs",
+              "RelativeDocumentMoniker": "Modele\\Class1.cs",
+              "ToolTip": "D:\\PIUproiect\\Proiect\\Modele\\Class1.cs",
+              "RelativeToolTip": "Modele\\Class1.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA2wBgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T18:38:50.033Z",
+              "WhenOpened": "2026-04-01T19:14:46.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\PIUproiect\\Modele\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Modele\\Class1.cs",
-              "ToolTip": "D:\\PIUproiect\\Modele\\Class1.cs",
-              "RelativeToolTip": "..\\Modele\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "Title": "AdministratorMemorie.cs",
+              "DocumentMoniker": "D:\\PIUproiect\\Proiect\\Logica\\AdministratorMemorie.cs",
+              "RelativeDocumentMoniker": "Logica\\AdministratorMemorie.cs",
+              "ToolTip": "D:\\PIUproiect\\Proiect\\Logica\\AdministratorMemorie.cs",
+              "RelativeToolTip": "Logica\\AdministratorMemorie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T18:38:19.627Z",
+              "WhenOpened": "2026-04-01T19:11:32.909Z",
               "EditorCaption": ""
             },
             {

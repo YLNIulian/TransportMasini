@@ -1,0 +1,16 @@
+D:\PIUproiect\Proiect\Logica\bin\Debug\net8.0\Logica.deps.json
+D:\PIUproiect\Proiect\Logica\bin\Debug\net8.0\Logica.dll
+D:\PIUproiect\Proiect\Logica\bin\Debug\net8.0\Logica.pdb
+D:\PIUproiect\Proiect\Logica\bin\Debug\net8.0\Modele.dll
+D:\PIUproiect\Proiect\Logica\bin\Debug\net8.0\Modele.pdb
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.csproj.AssemblyReference.cache
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.AssemblyInfoInputs.cache
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.AssemblyInfo.cs
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.csproj.CoreCompileInputs.cache
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.sourcelink.json
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.csproj.Up2Date
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.dll
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\refint\Logica.dll
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\Logica.pdb
+D:\PIUproiect\Proiect\Logica\obj\Debug\net8.0\ref\Logica.dll

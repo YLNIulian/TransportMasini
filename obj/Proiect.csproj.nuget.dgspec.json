@@ -4,14 +4,14 @@
     "D:\\PIUproiect\\Proiect\\Proiect.csproj": {}
   },
   "projects": {
-    "D:\\PIUproiect\\Logica\\Logica.csproj": {
+    "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PIUproiect\\Logica\\Logica.csproj",
+        "projectUniqueName": "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "D:\\PIUproiect\\Logica\\Logica.csproj",
+        "projectPath": "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\Ilion Iulian\\.nuget\\packages\\",
-        "outputPath": "D:\\PIUproiect\\Logica\\obj\\",
+        "outputPath": "D:\\PIUproiect\\Proiect\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ilion Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PIUproiect\\Modele\\Modele.csproj": {
-                "projectPath": "D:\\PIUproiect\\Modele\\Modele.csproj"
+              "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj": {
+                "projectPath": "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\PIUproiect\\Modele\\Modele.csproj": {
+    "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PIUproiect\\Modele\\Modele.csproj",
+        "projectUniqueName": "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj",
         "projectName": "Modele",
-        "projectPath": "D:\\PIUproiect\\Modele\\Modele.csproj",
+        "projectPath": "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj",
         "packagesPath": "C:\\Users\\Ilion Iulian\\.nuget\\packages\\",
-        "outputPath": "D:\\PIUproiect\\Modele\\obj\\",
+        "outputPath": "D:\\PIUproiect\\Proiect\\Modele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ilion Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -182,11 +182,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PIUproiect\\Logica\\Logica.csproj": {
-                "projectPath": "D:\\PIUproiect\\Logica\\Logica.csproj"
+              "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj": {
+                "projectPath": "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj"
               },
-              "D:\\PIUproiect\\Modele\\Modele.csproj": {
-                "projectPath": "D:\\PIUproiect\\Modele\\Modele.csproj"
+              "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj": {
+                "projectPath": "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj"
               }
             }
           }

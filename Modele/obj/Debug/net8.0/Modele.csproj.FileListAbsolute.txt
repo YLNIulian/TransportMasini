@@ -1,0 +1,12 @@
+D:\PIUproiect\Proiect\Modele\bin\Debug\net8.0\Modele.deps.json
+D:\PIUproiect\Proiect\Modele\bin\Debug\net8.0\Modele.dll
+D:\PIUproiect\Proiect\Modele\bin\Debug\net8.0\Modele.pdb
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.GeneratedMSBuildEditorConfig.editorconfig
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.AssemblyInfoInputs.cache
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.AssemblyInfo.cs
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.csproj.CoreCompileInputs.cache
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.sourcelink.json
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.dll
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\refint\Modele.dll
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\Modele.pdb
+D:\PIUproiect\Proiect\Modele\obj\Debug\net8.0\ref\Modele.dll

@@ -30,13 +30,13 @@
   "libraries": {
     "Logica/1.0.0": {
       "type": "project",
-      "path": "../Logica/Logica.csproj",
-      "msbuildProject": "../Logica/Logica.csproj"
+      "path": "Logica/Logica.csproj",
+      "msbuildProject": "Logica/Logica.csproj"
     },
     "Modele/1.0.0": {
       "type": "project",
-      "path": "../Modele/Modele.csproj",
-      "msbuildProject": "../Modele/Modele.csproj"
+      "path": "Modele/Modele.csproj",
+      "msbuildProject": "Modele/Modele.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -72,11 +72,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PIUproiect\\Logica\\Logica.csproj": {
-              "projectPath": "D:\\PIUproiect\\Logica\\Logica.csproj"
+            "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj": {
+              "projectPath": "D:\\PIUproiect\\Proiect\\Logica\\Logica.csproj"
             },
-            "D:\\PIUproiect\\Modele\\Modele.csproj": {
-              "projectPath": "D:\\PIUproiect\\Modele\\Modele.csproj"
+            "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj": {
+              "projectPath": "D:\\PIUproiect\\Proiect\\Modele\\Modele.csproj"
             }
           }
         }

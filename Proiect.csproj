@@ -8,8 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Logica\Logica.csproj" />
-    <ProjectReference Include="..\Modele\Modele.csproj" />
+    <Compile Remove="Logica\**" />
+    <Compile Remove="Modele\**" />
+    <EmbeddedResource Remove="Logica\**" />
+    <EmbeddedResource Remove="Modele\**" />
+    <None Remove="Logica\**" />
+    <None Remove="Modele\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Logica\Logica.csproj" />
+    <ProjectReference Include="Modele\Modele.csproj" />
   </ItemGroup>
 
 </Project>
