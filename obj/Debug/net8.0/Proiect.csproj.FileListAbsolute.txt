@@ -12,3 +12,10 @@ D:\PIUproiect\Proiect\obj\Debug\net8.0\refint\Proiect.dll
 D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.pdb
 D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.genruntimeconfig.cache
 D:\PIUproiect\Proiect\obj\Debug\net8.0\ref\Proiect.dll
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.sourcelink.json
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Logica.dll
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Modele.dll
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Logica.pdb
+D:\PIUproiect\Proiect\bin\Debug\net8.0\Modele.pdb
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.csproj.AssemblyReference.cache
+D:\PIUproiect\Proiect\obj\Debug\net8.0\Proiect.csproj.Up2Date

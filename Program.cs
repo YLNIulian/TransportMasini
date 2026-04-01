@@ -1,91 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
+using Modele;
+using Logica;
 
 namespace TransportMasini
 {
-    class Sofer
-    {
-        public string Nume { get; set; }
-        public string Id { get; set; }
-    }
-
-    class Masina
-    {
-        public string Numar { get; set; }
-        public double Km { get; set; }
-    }
-
-    class Traseu
-    {
-        public Sofer Soferul { get; set; }
-        public Masina Masina { get; set; }
-        public string Ruta { get; set; }
-        public double Distanta { get; set; }
-    }
-
     class Program
     {
         static void Main(string[] args)
         {
-            List<Sofer> soferi = new List<Sofer>();
-            List<Masina> masini = new List<Masina>();
-            List<Traseu> trasee = new List<Traseu>();
+            AdministratorMemorie admin = new AdministratorMemorie();
 
             while (true)
             {
-                Console.WriteLine("\n1. Adauga sofer");
+                Console.WriteLine("\n=== Meniu ===");
+                Console.WriteLine("1. Adauga sofer");
                 Console.WriteLine("2. Adauga masina");
                 Console.WriteLine("3. Adauga traseu");
                 Console.WriteLine("4. Afiseaza toate traseele");
-                Console.WriteLine("5. Cauta trasee dupa sofer");
+                Console.WriteLine("5. Cauta trasee dupa sofer (LINQ)");
+                Console.WriteLine("6. Afiseaza toti soferii");
+                Console.WriteLine("7. Afiseaza toate masinile");
                 Console.WriteLine("0. Iesire");
                 Console.Write("Alege o optiune: ");
 
-                string optiune = Console.ReadLine();
+                string optiune = Console.ReadLine() ?? "";
 
                 if (optiune == "1")
                 {
                     Sofer s = new Sofer();
                     Console.Write("Nume sofer: ");
-                    s.Nume = Console.ReadLine();
+                    s.Nume = Console.ReadLine() ?? "";
                     Console.Write("ID sofer: ");
-                    s.Id = Console.ReadLine();
-                    soferi.Add(s);
+                    s.Id = Console.ReadLine() ?? "";
+                    admin.AdaugaSofer(s);
                 }
                 else if (optiune == "2")
                 {
                     Masina m = new Masina();
                     Console.Write("Numar inmatriculare: ");
-                    m.Numar = Console.ReadLine();
+                    m.Numar = Console.ReadLine() ?? "";
                     Console.Write("Kilometri initiali: ");
-                    m.Km = Convert.ToDouble(Console.ReadLine());
-                    masini.Add(m);
+                    m.Km = Convert.ToDouble(Console.ReadLine() ?? "0");
+
+                    Console.Write("Culoare (0=Rosu,1=Alb,2=Negru): ");
+                    int indexCuloare = Convert.ToInt32(Console.ReadLine() ?? "0");
+                    m.CuloareMasina = (Culoare)indexCuloare;
+
+                    m.OptiuniMasina = Optiuni.AerConditionat | Optiuni.Navigatie;
+                    admin.AdaugaMasina(m);
                 }
                 else if (optiune == "3")
                 {
                     Console.Write("Numele soferului: ");
-                    string numeSofer = Console.ReadLine();
-                    Sofer soferGasit = null;
-
-                    foreach (Sofer s in soferi)
-                    {
-                        if (s.Nume == numeSofer)
-                        {
-                            soferGasit = s;
-                        }
-                    }
+                    string numeSofer = Console.ReadLine() ?? "";
+                    Sofer? soferGasit = admin.CautaSofer(numeSofer);
 
                     Console.Write("Numarul masinii: ");
-                    string numarMasina = Console.ReadLine();
-                    Masina masinaGasita = null;
-
-                    foreach (Masina m in masini)
-                    {
-                        if (m.Numar == numarMasina)
-                        {
-                            masinaGasita = m;
-                        }
-                    }
+                    string numarMasina = Console.ReadLine() ?? "";
+                    Masina? masinaGasita = admin.CautaMasina(numarMasina);
 
                     if (soferGasit != null && masinaGasita != null)
                     {
@@ -94,43 +66,75 @@ namespace TransportMasini
                         t.Masina = masinaGasita;
 
                         Console.Write("Ruta: ");
-                        t.Ruta = Console.ReadLine();
+                        t.Ruta = Console.ReadLine() ?? "";
                         Console.Write("Distanta parcursa (km): ");
-                        t.Distanta = Convert.ToDouble(Console.ReadLine());
+                        t.Distanta = Convert.ToDouble(Console.ReadLine() ?? "0");
 
                         masinaGasita.Km = masinaGasita.Km + t.Distanta;
-                        trasee.Add(t);
+                        admin.AdaugaTraseu(t);
                     }
                     else
                     {
-                        Console.WriteLine("Soferul sau masina nu a fost gasita in sistem.");
+                        Console.WriteLine("Soferul sau masina nu a fost gasita!");
                     }
                 }
                 else if (optiune == "4")
                 {
-                    foreach (Traseu t in trasee)
+                    var toateTraseele = admin.GetToateTraseele();
+                    foreach (Traseu t in toateTraseele)
                     {
-                        Console.WriteLine(t.Soferul.Nume + " a condus " + t.Masina.Numar + " pe ruta " + t.Ruta + ". Distanta: " + t.Distanta + " km. Masina are acum " + t.Masina.Km + " km.");
+                        Console.WriteLine(t.Soferul?.Nume + " a condus " + t.Masina?.Numar + " pe ruta " + t.Ruta);
                     }
                 }
                 else if (optiune == "5")
                 {
-                    Console.Write("Introdu numele soferului pentru cautare: ");
-                    string numeCautat = Console.ReadLine();
-                    int gasite = 0;
+                    Console.Write("Introdu numele soferului: ");
+                    string numeCautat = Console.ReadLine() ?? "";
 
-                    foreach (Traseu t in trasee)
+                    var traseeGasite = admin.CautaTraseeDupaSofer(numeCautat);
+
+                    if (traseeGasite.Count == 0)
                     {
-                        if (t.Soferul.Nume == numeCautat)
+                        Console.WriteLine("Nu s-au gasit trasee.");
+                    }
+                    else
+                    {
+                        foreach (Traseu t in traseeGasite)
                         {
-                            Console.WriteLine("Ruta: " + t.Ruta + " | Masina: " + t.Masina.Numar + " | Distanta: " + t.Distanta + " km");
-                            gasite++;
+                            Console.WriteLine("Ruta: " + t.Ruta + " | Masina: " + t.Masina?.Numar);
                         }
                     }
-
-                    if (gasite == 0)
+                }
+                else if (optiune == "6")
+                {
+                    Console.WriteLine("\n--- Lista Soferi ---");
+                    var listaSoferi = admin.GetSoferi();
+                    if (listaSoferi.Count == 0)
                     {
-                        Console.WriteLine("Nu s-au gasit trasee pentru acest sofer.");
+                        Console.WriteLine("Nu exista soferi inregistrati.");
+                    }
+                    else
+                    {
+                        foreach (var s in listaSoferi)
+                        {
+                            Console.WriteLine("Nume: " + s.Nume + " | ID: " + s.Id);
+                        }
+                    }
+                }
+                else if (optiune == "7")
+                {
+                    Console.WriteLine("\n--- Lista Masini ---");
+                    var listaMasini = admin.GetMasini();
+                    if (listaMasini.Count == 0)
+                    {
+                        Console.WriteLine("Nu exista masini inregistrate.");
+                    }
+                    else
+                    {
+                        foreach (var m in listaMasini)
+                        {
+                            Console.WriteLine("Nr: " + m.Numar + " | Km: " + m.Km + " | Culoare: " + m.CuloareMasina + " | Optiuni: " + m.OptiuniMasina);
+                        }
                     }
                 }
                 else if (optiune == "0")
